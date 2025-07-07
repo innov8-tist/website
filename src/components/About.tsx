@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import logo from "../../public/logo.png"
 
 const About = () => {
   return (
@@ -11,7 +12,7 @@ const About = () => {
             <div className="relative">
               <div className="relative z-10 rounded-lg overflow-hidden shadow-xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                  src={logo}
                   alt="Team collaboration" 
                   className="w-full h-auto"
                 />
@@ -28,7 +29,7 @@ const About = () => {
               We are <span className="text-golden-700">Innov8 Creative Solutions</span>
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              Founded in 2020, Innov8 Creative Solutions is a team of passionate designers, developers, 
+              Founded in 2022, Innov8 Creative Solutions is a team of passionate designers, developers, 
               and digital strategists committed to transforming businesses through technology.
             </p>
             <p className="text-lg text-gray-700 mb-6">
@@ -39,19 +40,19 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-8 mt-8 mb-8">
               <div>
-                <div className="text-3xl font-bold text-golden-700">100+</div>
+                <div className="text-3xl font-bold text-golden-700">10+</div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-golden-700">50+</div>
+                <div className="text-3xl font-bold text-golden-700">5+</div>
                 <div className="text-gray-600">Happy Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-golden-700">5+</div>
+                <div className="text-3xl font-bold text-golden-700">2</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-golden-700">15+</div>
+                <div className="text-3xl font-bold text-golden-700">4</div>
                 <div className="text-gray-600">Team Members</div>
               </div>
             </div>

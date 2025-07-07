@@ -7,7 +7,7 @@ const Footer = () => {
   const footerLinks = [
     {
       title: "Services",
-      links: ["Web Design", "Development", "Mobile Apps", "E-commerce", "Digital Marketing", "SEO"]
+      links: ["AI Solutions", "Web Development", "Mobile Apps", "Business Automation","Cloud & Hosting","E-commerce"]
     },
     {
       title: "Company",
@@ -30,7 +30,7 @@ const Footer = () => {
             </h2>
             <p className="text-gray-400 mb-4 max-w-md">
               Innov8 Creative Solutions is a full-service digital agency helping businesses 
-              thrive in the digital landscape with innovative solutions.
+              thrive in the digital landscape with inInnov8tive solutions.
             </p>
             <div className="flex space-x-4">
               {["LinkedIn", "Twitter", "Instagram", "GitHub"].map((social, index) => (

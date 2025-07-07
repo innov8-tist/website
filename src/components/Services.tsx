@@ -44,8 +44,8 @@ const Services = () => {
   const services = [
     {
       icon: <Layout size={24} />,
-      title: "Website Design",
-      description: "Beautiful, intuitive designs that engage your audience and reflect your brand identity.",
+      title: "AI Solutions",
+      description: "Custom AI tools that enhance productivity, from intelligent chatbots to document analysis and predictive insights.",
     },
     {
       icon: <Code size={24} />,
@@ -54,8 +54,8 @@ const Services = () => {
     },
     {
       icon: <Smartphone size={24} />,
-      title: "Mobile Apps",
-      description: "Native and cross-platform mobile applications that deliver seamless user experiences.",
+      title: "Business Automation",
+      description: "Automate your workflows to reduce manual work, improve efficiency, and scale operations seamlessly.",
     },
     {
       icon: <Globe size={24} />,
@@ -64,13 +64,13 @@ const Services = () => {
     },
     {
       icon: <Megaphone size={24} />,
-      title: "Digital Marketing",
-      description: "Strategic campaigns that increase visibility, engagement, and conversions across digital channels.",
+      title: "Cloud & Hosting",
+      description: "Reliable cloud infrastructure and hosting solutions tailored to your project needs with 24/7 support.",
     },
     {
-      icon: <LineChart size={24} />,
-      title: "Analytics & SEO",
-      description: "Data-driven optimization to improve search rankings and provide actionable business insights.",
+      icon: <Smartphone size={24} />,
+      title: "Mobile App",
+      description: "Native and cross-platform mobile applications that deliver seamless user experiences.",
     },
   ];
 

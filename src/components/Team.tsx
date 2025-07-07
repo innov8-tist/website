@@ -74,7 +74,7 @@ const Team = () => {
           </h2>
           <div className="h-1 w-20 bg-golden-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600">
-            We're a diverse team of talented professionals passionate about digital innovation.
+            We're a diverse team of talented professionals passionate about digital inInnov8tion.
           </p>
         </div>
         

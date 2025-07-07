@@ -5,6 +5,23 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ExternalLink, Eye } from "lucide-react";
+import denkareLogo from "/public/denkare-logo2.webp"
+import gistEdLogo from "/public/gisted.webp"
+import ilfLogo from "/public/i-love-finance.webp"
+import denkareImg1 from "/public/denkare/img1.png"
+import denkareImg2 from "/public/denkare/img2.png"
+import denkareImg3 from "/public/denkare/img3.png"
+import denkareImg4 from "/public/denkare/img4.png"
+import gistedImg1 from "/public/gisted/img1.png"
+import gistedImg2 from "/public/gisted/img2.png"
+import gistedImg3 from "/public/gisted/img3.png"
+import gistedImg4 from "/public/gisted/img4.png"
+import gistedImg5 from "/public/gisted/img5.png"
+import ilf1 from "/public/i-love-finance/img1.jpeg"
+import ilf2 from "/public/i-love-finance/img2.png"
+import ilf3 from "/public/i-love-finance/img3.png"
+import ilf4 from "/public/i-love-finance/img4.png"
+
 
 interface Project {
   id: number;
@@ -20,87 +37,52 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    shortDescription: "Modern online shopping platform with seamless user experience",
-    fullDescription: "A comprehensive e-commerce solution built with cutting-edge technologies. Features include user authentication, product catalog, shopping cart, payment integration, order management, and admin dashboard. The platform is optimized for mobile devices and provides a smooth shopping experience with fast loading times and intuitive navigation.",
-    category: "Web Development",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "Denkare",
+    shortDescription: "AI-powered dental assistant",
+    fullDescription: "Dental diagnosis is often manual, time-consuming, and prone to errors, requiring expert interpretation of X-rays and extensive documentation. Our AI-powered assistant automates anomaly detection in X-rays, providing faster and more accurate insights. It integrates a conversational AI that retains patient history, allowing doctors to quickly access past records. AI-generated diagnosis reports and treatment plans help streamline decision-making, while doctors can review, refine, and provide feedback to improve AI accuracy over time. The system also automates PDF report generation, reducing administrative workload and ensuring structured documentation. By enhancing efficiency, accuracy, and accessibility, it transforms dental care, making diagnosis and treatment planning smarter, safer, and faster..",
+    category: "AI Web App",
+    technologies: ["Python", "Langchain", "Postgres", "React", "Node"],
     images: [
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=800&h=600&fit=crop"
+      denkareLogo,
+      denkareImg1,
+      denkareImg2,
+      denkareImg3,
+      denkareImg4
     ],
-    liveUrl: "https://demo-ecommerce.com"
+    liveUrl: "https://youtu.be/AmN7yiZIQM0"
   },
   {
     id: 2,
-    title: "Brand Identity Design",
-    shortDescription: "Complete brand identity for a tech startup",
-    fullDescription: "Comprehensive brand identity design for an innovative tech startup. The project included logo design, color palette development, typography selection, business card design, letterhead, and brand guidelines. We created a modern, tech-forward identity that reflects the company's innovative spirit while maintaining professional credibility in the market.",
-    category: "Branding",
-    technologies: ["Adobe Illustrator", "Photoshop", "Figma"],
+    title: "GistED",
+    shortDescription: "Your AI-powered learning companion—smarter studying, simplified",
+    fullDescription: "GistEd is an AI-powered, all-in-one learning platform that simplifies education by centralizing study materials and enhancing productivity. It addresses the problem of information overload, helping students and lifelong learners stay organized and focused. With features like an Interactive AI chatbot, YouTube content extraction, community-driven library, task management, doodle board, handwritten note conversion, and NLP-powered chat for sorting and emailing documents. .",
+    category: "AI Web App",
+    technologies: ["Python", "Langchain", "LangGraph", "Expressjs", "FastAPI", "Vitejs"],
     images: [
-      "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop"
-    ]
+      gistEdLogo,
+      gistedImg1,
+      gistedImg2,
+      gistedImg3,
+      gistedImg4,
+      gistedImg5
+    ],
+    liveUrl:"https://youtu.be/pLO7GISv2WI"
   },
   {
     id: 3,
-    title: "Mobile App Design",
-    shortDescription: "Intuitive fitness tracking mobile application",
-    fullDescription: "User-centered design for a comprehensive fitness tracking mobile application. The app features workout planning, progress tracking, nutrition logging, social challenges, and personalized coaching. We conducted extensive user research, created user personas, developed wireframes, and designed high-fidelity prototypes. The final design emphasizes usability, motivation, and long-term engagement.",
-    category: "UI/UX Design",
-    technologies: ["Figma", "Principle", "Sketch"],
+    title: "I Love Finance ❤️",
+    shortDescription: "Smart Finance, Real-Time Insights - Powered by AI",
+    fullDescription: "We developed a fintech website with a clean, user-friendly dashboard that presented key financial data in an accessible format. The platform featured an AI-powered chatbot that provided financial insights and customer support. Additionally, the website integrated real-time financial data, stock market analysis, credit score prediction, and loan status detection to enhance user decision-making. Users also received AI-generated financial reports with insights and recommendations.",
+    category: "AI Web App",
+    technologies: ["Python", "Langchain", "LangGraph", "Expressjs", "FastAPI", "Vitejs"],
     images: [
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
-    ]
+      ilfLogo,
+      ilf1,
+      ilf2,
+      ilf3,
+      ilf4    ],
+    liveUrl:"https://youtu.be/HjPIh6R8lDs"
   },
-  {
-    id: 4,
-    title: "Restaurant Website",
-    shortDescription: "Elegant website for fine dining restaurant",
-    fullDescription: "An elegant, responsive website for a premium fine dining restaurant. The project included menu presentation, online reservation system, event booking, gallery showcase, and customer reviews integration. We focused on creating an appetizing visual experience that reflects the restaurant's sophisticated atmosphere while ensuring easy navigation and mobile optimization for on-the-go customers.",
-    category: "Web Development",
-    technologies: ["React", "Gatsby", "Contentful", "Netlify"],
-    images: [
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop"
-    ],
-    liveUrl: "https://demo-restaurant.com"
-  },
-  {
-    id: 5,
-    title: "SaaS Dashboard",
-    shortDescription: "Analytics dashboard for business intelligence",
-    fullDescription: "A comprehensive analytics dashboard for a SaaS business intelligence platform. The dashboard provides real-time data visualization, custom report generation, user management, and API integrations. We designed an intuitive interface that makes complex data accessible to users of all technical levels, with interactive charts, customizable widgets, and responsive design for desktop and tablet use.",
-    category: "Web Development",
-    technologies: ["Vue.js", "D3.js", "Python", "PostgreSQL"],
-    images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=800&h=600&fit=crop"
-    ]
-  },
-  {
-    id: 6,
-    title: "Marketing Campaign",
-    shortDescription: "Digital marketing campaign for product launch",
-    fullDescription: "Multi-channel digital marketing campaign for a major product launch. The campaign included social media strategy, email marketing automation, content creation, influencer partnerships, and paid advertising across Google and Facebook platforms. We achieved a 300% increase in brand awareness and exceeded sales targets by 150% during the launch period.",
-    category: "Digital Marketing",
-    technologies: ["Google Ads", "Facebook Ads", "Mailchimp", "Analytics"],
-    images: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop"
-    ]
-  }
 ];
 
 const Portfolio = () => {

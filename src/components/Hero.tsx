@@ -16,15 +16,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900">
-            <span className="block">Turn Ideas Into</span> 
-            <span className="gradient-text">Digital Reality</span>
+            <span className="block">Empowering Businesses </span> 
+            <span className="gradient-text">with Smart Digital Solutions</span>
           </h1>
-          
-          <p className="text-lg md:text-xl mb-8 text-gray-700 max-w-2xl mx-auto">
-            Innov8 Creative Solutions is a full-service digital agency crafting beautiful, 
-            functional experiences that drive results for ambitious brands.
+          <p className="text-lg md:text-xl mb-8 text-gray-700 max-w-6xl mx-auto">
+          Innov8 is your all-in-one partner for website creation, hosting, business automation, 
+          and AI-powered tools—designed to help modern brands grow and thrive online.
           </p>
-          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-golden-500 hover:bg-golden-600 text-white font-medium px-8">
               <a href="#contact">Get Started</a>
@@ -35,12 +33,10 @@ const Hero = () => {
           </div>
           
           <div className="mt-16 flex flex-wrap justify-center gap-8 items-center">
-            <div className="text-gray-600 text-sm uppercase tracking-wider font-medium">Trusted by:</div>
-            {["Company A", "Company B", "Company C", "Company D"].map((company, index) => (
-              <div key={index} className="text-gray-800 font-semibold text-xl">
-                {company}
+            <div className="text-gray-600 text-sm uppercase tracking-wider font-medium"> JOINED BY EARLY ADOPTERS: </div>
+              <div className="text-gray-800 font-semibold text-l">
+               Over 10+ creators exploring our services
               </div>
-            ))}
           </div>
         </div>
       </div>
