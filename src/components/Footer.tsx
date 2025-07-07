@@ -26,10 +26,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:w-1/3">
             <h2 className="text-2xl font-bold mb-4">
-              Nova<span className="text-nova-500">.</span>
+              Innov8<span className="text-golden-500">.</span>
             </h2>
             <p className="text-gray-400 mb-4 max-w-md">
-              Nova Creative Solutions is a full-service digital agency helping businesses 
+              Innov8 Creative Solutions is a full-service digital agency helping businesses 
               thrive in the digital landscape with innovative solutions.
             </p>
             <div className="flex space-x-4">
@@ -67,12 +67,12 @@ const Footer = () => {
         {/* Bottom footer */}
         <div className="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 mb-4 md:mb-0">
-            © {currentYear} Nova Creative Solutions. All rights reserved.
+            © {currentYear} Innov8 Creative Solutions. All rights reserved.
           </div>
           <div className="flex items-center text-gray-400">
             <span>Made with</span>
-            <Heart size={16} className="mx-1 text-nova-500" />
-            <span>by Nova Team</span>
+            <Heart size={16} className="mx-1 text-golden-500" />
+            <span>by Innov8 Team</span>
           </div>
         </div>
       </div>

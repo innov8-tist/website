@@ -14,22 +14,22 @@ interface TeamMemberProps {
 
 const TeamMember = ({ name, role, image, bio }: TeamMemberProps) => (
   <div className="flex flex-col items-center text-center">
-    <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-4 border-4 border-white shadow-xl">
+    <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-4 border-4 border-golden-200 shadow-xl">
       <img src={image} alt={name} className="w-full h-full object-cover" />
     </div>
     <h3 className="text-xl font-bold text-gray-900">{name}</h3>
-    <p className="text-nova-600 mb-2">{role}</p>
+    <p className="text-golden-600 mb-2">{role}</p>
     <p className="text-gray-600 mb-4">{bio}</p>
     <div className="flex space-x-3">
-      <a href="#" className="text-gray-500 hover:text-nova-700">
+      <a href="#" className="text-gray-500 hover:text-golden-700">
         <Linkedin size={18} />
         <span className="sr-only">LinkedIn</span>
       </a>
-      <a href="#" className="text-gray-500 hover:text-nova-700">
+      <a href="#" className="text-gray-500 hover:text-golden-700">
         <Twitter size={18} />
         <span className="sr-only">Twitter</span>
       </a>
-      <a href="#" className="text-gray-500 hover:text-nova-700">
+      <a href="#" className="text-gray-500 hover:text-golden-700">
         <Mail size={18} />
         <span className="sr-only">Email</span>
       </a>
@@ -66,13 +66,13 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24 bg-gray-50">
+    <section id="team" className="py-24 bg-gradient-to-br from-golden-50 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Meet Our <span className="text-nova-700">Team</span>
+            Meet Our <span className="text-golden-700">Team</span>
           </h2>
-          <div className="h-1 w-20 bg-nova-500 mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-golden-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600">
             We're a diverse team of talented professionals passionate about digital innovation.
           </p>

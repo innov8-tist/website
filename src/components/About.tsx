@@ -17,18 +17,18 @@ const About = () => {
                 />
               </div>
               {/* Decorative elements */}
-              <div className="absolute -top-4 -left-4 w-64 h-64 bg-nova-100 rounded-full opacity-50 -z-10"></div>
-              <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-nova-200 rounded-full opacity-50 -z-10"></div>
+              <div className="absolute -top-4 -left-4 w-64 h-64 bg-golden-100 rounded-full opacity-50 -z-10"></div>
+              <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-golden-200 rounded-full opacity-50 -z-10"></div>
             </div>
           </div>
           
           {/* Text column */}
           <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              We are <span className="text-nova-700">Nova Creative Solutions</span>
+              We are <span className="text-golden-700">Innov8 Creative Solutions</span>
             </h2>
             <p className="text-lg text-gray-700 mb-6">
-              Founded in 2020, Nova Creative Solutions is a team of passionate designers, developers, 
+              Founded in 2020, Innov8 Creative Solutions is a team of passionate designers, developers, 
               and digital strategists committed to transforming businesses through technology.
             </p>
             <p className="text-lg text-gray-700 mb-6">
@@ -39,24 +39,24 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-8 mt-8 mb-8">
               <div>
-                <div className="text-3xl font-bold text-nova-700">100+</div>
+                <div className="text-3xl font-bold text-golden-700">100+</div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-nova-700">50+</div>
+                <div className="text-3xl font-bold text-golden-700">50+</div>
                 <div className="text-gray-600">Happy Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-nova-700">5+</div>
+                <div className="text-3xl font-bold text-golden-700">5+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-nova-700">15+</div>
+                <div className="text-3xl font-bold text-golden-700">15+</div>
                 <div className="text-gray-600">Team Members</div>
               </div>
             </div>
             
-            <Button className="bg-nova-700 hover:bg-nova-800">
+            <Button className="bg-golden-700 hover:bg-golden-800">
               <a href="#contact">Work With Us</a>
             </Button>
           </div>

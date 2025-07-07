@@ -9,8 +9,8 @@ interface TestimonialProps {
 }
 
 const Testimonial = ({ quote, author, position, company }: TestimonialProps) => (
-  <Card className="p-6 border border-gray-200 shadow-sm h-full">
-    <div className="mb-4 text-nova-500">
+  <Card className="p-6 border border-golden-200 shadow-sm h-full bg-white">
+    <div className="mb-4 text-golden-500">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="36"
@@ -39,19 +39,19 @@ const Testimonial = ({ quote, author, position, company }: TestimonialProps) => 
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Nova Creative Solutions transformed our online presence. Their team understood our vision perfectly and delivered beyond our expectations.",
+      quote: "Innov8 Creative Solutions transformed our online presence. Their team understood our vision perfectly and delivered beyond our expectations.",
       author: "Jennifer Smith",
       position: "CEO",
       company: "TechStart Inc."
     },
     {
-      quote: "Working with Nova was a game-changer for our business. Their strategic approach to web design and development helped us increase conversions by 45%.",
+      quote: "Working with Innov8 was a game-changer for our business. Their strategic approach to web design and development helped us increase conversions by 45%.",
       author: "Michael Chen",
       position: "Marketing Director",
       company: "GrowthBox"
     },
     {
-      quote: "The team at Nova is exceptional. They're not just skilled designers and developers but also strategic partners who care about our success.",
+      quote: "The team at Innov8 is exceptional. They're not just skilled designers and developers but also strategic partners who care about our success.",
       author: "Sarah Johnson",
       position: "Founder",
       company: "Artisan Collective"
@@ -63,9 +63,9 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            What Our <span className="text-nova-700">Clients Say</span>
+            What Our <span className="text-golden-700">Clients Say</span>
           </h2>
-          <div className="h-1 w-20 bg-nova-500 mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-golden-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600">
             Don't just take our word for it — hear from some of our satisfied clients.
           </p>

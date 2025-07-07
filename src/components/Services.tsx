@@ -16,14 +16,14 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, icon }: ServiceCardProps) => (
-  <Card className="p-6 border border-gray-200 card-hover h-full flex flex-col">
-    <div className="rounded-full bg-nova-100 w-16 h-16 flex items-center justify-center mb-4">
-      <div className="text-nova-700">{icon}</div>
+  <Card className="p-6 border border-golden-200 card-hover h-full flex flex-col bg-white shadow-sm">
+    <div className="rounded-full bg-golden-100 w-16 h-16 flex items-center justify-center mb-4">
+      <div className="text-golden-700">{icon}</div>
     </div>
     <h3 className="text-xl font-bold mb-3 text-gray-900">{title}</h3>
     <p className="text-gray-600 flex-grow">{description}</p>
     <div className="mt-6">
-      <a href="#contact" className="text-nova-700 font-medium flex items-center hover:text-nova-800">
+      <a href="#contact" className="text-golden-700 font-medium flex items-center hover:text-golden-800">
         Learn more
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
@@ -75,13 +75,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gray-50">
+    <section id="services" className="py-24 bg-gradient-to-br from-golden-50 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Our <span className="text-nova-700">Services</span>
+            Our <span className="text-golden-700">Services</span>
           </h2>
-          <div className="h-1 w-20 bg-nova-500 mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-golden-500 mx-auto mb-6"></div>
           <p className="text-lg text-gray-600">
             We offer comprehensive digital solutions to help your business thrive in the digital landscape.
           </p>
