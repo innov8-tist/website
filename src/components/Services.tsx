@@ -5,7 +5,18 @@ import {
   Globe, 
   Smartphone, 
   Megaphone, 
-  LineChart 
+  LineChart, 
+  Cloud,
+  CloudCog,
+  ShoppingBag,
+  BriefcaseBusiness,
+  Brain,
+  BrainCircuit,
+  BrainCog,
+  BrainCircuitIcon,
+  BrainIcon,
+  LucideBrainCircuit,
+  BrainCogIcon
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -43,7 +54,7 @@ const ServiceCard = ({ title, description, icon }: ServiceCardProps) => (
 const Services = () => {
   const services = [
     {
-      icon: <Layout size={24} />,
+      icon: <Brain size={24} />,
       title: "AI Solutions",
       description: "Custom AI tools that enhance productivity, from intelligent chatbots to document analysis and predictive insights.",
     },
@@ -53,17 +64,17 @@ const Services = () => {
       description: "Custom-built websites and web applications with clean, efficient code and optimal performance.",
     },
     {
-      icon: <Smartphone size={24} />,
+      icon: <BriefcaseBusiness size={24} />,
       title: "Business Automation",
       description: "Automate your workflows to reduce manual work, improve efficiency, and scale operations seamlessly.",
     },
     {
-      icon: <Globe size={24} />,
+      icon: <ShoppingBag size={24} />,
       title: "E-commerce",
       description: "Full-featured online stores that drive sales with secure payment processing and inventory management.",
     },
     {
-      icon: <Megaphone size={24} />,
+      icon: <CloudCog size={24} />,
       title: "Cloud & Hosting",
       description: "Reliable cloud infrastructure and hosting solutions tailored to your project needs with 24/7 support.",
     },
