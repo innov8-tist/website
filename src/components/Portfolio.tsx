@@ -5,22 +5,22 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { ExternalLink, Eye } from "lucide-react";
-import denkareLogo from "/public/denkare-logo2.webp"
-import gistEdLogo from "/public/gisted.webp"
-import ilfLogo from "/public/i-love-finance.webp"
-import denkareImg1 from "/public/denkare/img1.png"
-import denkareImg2 from "/public/denkare/img2.png"
-import denkareImg3 from "/public/denkare/img3.png"
-import denkareImg4 from "/public/denkare/img4.png"
-import gistedImg1 from "/public/gisted/img1.png"
-import gistedImg2 from "/public/gisted/img2.png"
-import gistedImg3 from "/public/gisted/img3.png"
-import gistedImg4 from "/public/gisted/img4.png"
-import gistedImg5 from "/public/gisted/img5.png"
-import ilf1 from "/public/i-love-finance/img1.jpeg"
-import ilf2 from "/public/i-love-finance/img2.png"
-import ilf3 from "/public/i-love-finance/img3.png"
-import ilf4 from "/public/i-love-finance/img4.png"
+import denkareLogo from "/denkare-logo2.webp"
+import gistEdLogo from "/gisted.webp"
+import ilfLogo from "/i-love-finance.webp"
+import denkareImg1 from "/denkare/img1.png"
+import denkareImg2 from "/denkare/img2.png"
+import denkareImg3 from "/denkare/img3.png"
+import denkareImg4 from "/denkare/img4.png"
+import gistedImg1 from "/gisted/img1.png"
+import gistedImg2 from "/gisted/img2.png"
+import gistedImg3 from "/gisted/img3.png"
+import gistedImg4 from "/gisted/img4.png"
+import gistedImg5 from "/gisted/img5.png"
+import ilf1 from "/i-love-finance/img1.jpeg"
+import ilf2 from "/i-love-finance/img2.png"
+import ilf3 from "/i-love-finance/img3.png"
+import ilf4 from "/i-love-finance/img4.png"
 
 
 interface Project {

@@ -36,6 +36,10 @@ const Footer = () => {
             {[
                       { label: "Instagram", href: "https://www.instagram.com/innov8.dev" },
                       { label: "GitHub", href: "https://github.com/innov8-tist/" },
+                      {
+                        label: "LinkedIn",
+                        href: "https://www.linkedin.com/in/innov8-dev-74bb86373",
+                      },
                     ].map(({ label, href }, index) => (
                       <a
                         key={index}
