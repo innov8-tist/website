@@ -33,15 +33,20 @@ const Footer = () => {
               thrive in the digital landscape with inInnov8tive solutions.
             </p>
             <div className="flex space-x-4">
-              {["LinkedIn", "Twitter", "Instagram", "GitHub"].map((social, index) => (
-                <a 
-                  key={index} 
-                  href="#" 
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  {social}
-                </a>
-              ))}
+            {[
+                      { label: "Instagram", href: "https://www.instagram.com/innov8.dev" },
+                      { label: "GitHub", href: "https://github.com/innov8-tist/" },
+                    ].map(({ label, href }, index) => (
+                      <a
+                        key={index}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-Innov8-700 transition-colors"
+                      >
+                        {label}
+                      </a>
+                    ))}
             </div>
           </div>
           
