@@ -4,6 +4,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 
+const GOOGLE_FORM_ACTION_URL =
+  "https://script.google.com/macros/s/AKfycbx6lps61XTBLioxd341wThVcwy4WY1Y_iMNwk0DgLYT71VERqWT-8YqMdNHRJeyW-ed/exec";
+
 const Contact = () => {
   const [formState, setFormState] = useState({
     name: "",
@@ -18,13 +21,29 @@ const Contact = () => {
     const { name, value } = e.target;
     setFormState((prev) => ({ ...prev, [name]: value }));
   };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, you would send the form data to a server
-    console.log("Form submitted:", formState);
-    alert("Thank you for your message! We'll get back to you soon.");
-    setFormState({ name: "", email: "", subject: "", message: "" });
+
+    try {
+      const response = await fetch(GOOGLE_FORM_ACTION_URL, {
+        method: "POST",
+        body: JSON.stringify(formState),
+      });
+
+      if (response.ok) {
+        alert("Thank you for your message! We'll get back to you soon.");
+        setFormState({ name: "", email: "", subject: "", message: "" });
+      } else {
+        const data = await response.json();
+        alert(
+          "There was an error submitting the form: " +
+            (data.message || "Unknown error")
+        );
+      }
+    } catch (err) {
+      alert("There was an error submitting the form.");
+      console.error(err);
+    }
   };
 
   return (
@@ -81,7 +100,7 @@ const Contact = () => {
                     <h4 className="text-sm font-medium text-gray-500 mb-1">
                       Phone
                     </h4>
-                    <p className="text-base font-medium">+91 8136860631</p>
+                    <p className="text-base font-medium">+918921240475</p>
                   </div>
                 </div>
 
@@ -104,24 +123,31 @@ const Contact = () => {
 
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                  <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-                  <div className="flex space-x-4">
-                    {[
-                      { label: "Instagram", href: "https://www.instagram.com/innov8.dev" },
-                      { label: "GitHub", href: "https://github.com/innov8-tist/" },
-                    ].map(({ label, href }, index) => (
-                      <a
-                        key={index}
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-Innov8-700 transition-colors"
-                      >
-                        {label}
-                      </a>
-                    ))}
-                  </div>
+                <div className="flex space-x-4">
+                  {[
+                    {
+                      label: "Instagram",
+                      href: "https://www.instagram.com/innov8.dev",
+                    },
+                    {
+                      label: "GitHub",
+                      href: "https://github.com/innov8-tist/",
+                    },
+                    {
+                      label: "LinkedIn",
+                      href: "https://www.linkedin.com/in/innov8-dev-74bb86373",
+                    },
+                  ].map(({ label, href }, index) => (
+                    <a
+                      key={index}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-Innov8-700 transition-colors"
+                    >
+                      {label}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
@@ -207,7 +233,7 @@ const Contact = () => {
               <div>
                 <Button
                   type="submit"
-                  className="w-full md:w-auto bg-Innov8-700 hover:bg-Innov8-800"
+                  className="w-full md:w-auto bg-black hover:bg-neutral-800"
                   size="lg"
                 >
                   Send Message
