@@ -1,5 +1,6 @@
 
 import { Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +12,7 @@ const Footer = () => {
     },
     {
       title: "Company",
-      links: ["About", "Team", "Careers", "Privacy Policy", "Terms of Service"]
+      links: ["About", "Team", "Careers", "Privacy Policy"]
     },
     {
       title: "Resources",
@@ -77,6 +78,10 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 mb-4 md:mb-0">
             © {currentYear} Innov8 Creative Solutions. All rights reserved.
+            <span className="mx-2">|</span>
+            <Link to="/terms" className="text-gray-400 hover:text-white underline">
+              Terms and Conditions
+            </Link>
           </div>
           <div className="flex items-center text-gray-400">
             <span>Made with</span>
