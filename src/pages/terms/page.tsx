@@ -140,9 +140,9 @@ export default function TermsPage() {
                 <p className="text-gray-700">
                   <strong>Innov8 Creative Solutions</strong>
                   <br />
-                  Email: legal@innov8creative.com
+                  Email: innov8dotdev@gmail.com
                   <br />
-                  Website: www.innov8creative.com
+                  Website: tinyurl.com/Innov8dotdev
                 </p>
               </div>
             </section>
