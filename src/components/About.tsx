@@ -29,7 +29,7 @@ const About = () => {
               We are <span className="text-golden-700">Innov8 Technologys</span>
             </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Though officially founded in <strong>2025</strong>, our journey began way back in <strong>2022</strong> — 
+                Though officially founded in <strong>2025</strong>, our journey began way back in <strong>2023</strong> — 
                 when a few passionate freelancers started building digital solutions that made a real impact. 
                 What started as individual creative work has now evolved into <strong>Innov8 Technologys</strong>, 
                 a full-fledged digital agency driven by innovation, design, and results.
