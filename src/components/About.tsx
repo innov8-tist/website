@@ -26,17 +26,20 @@ const About = () => {
           {/* Text column */}
           <div className="lg:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              We are <span className="text-golden-700">Innov8 Creative Solutions</span>
+              We are <span className="text-golden-700">Innov8 Technologys</span>
             </h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Founded in 2022, Innov8 Creative Solutions is a team of passionate designers, developers, 
-              and digital strategists committed to transforming businesses through technology.
-            </p>
-            <p className="text-lg text-gray-700 mb-6">
-              We believe in creating digital experiences that not only look beautiful but also drive 
-              tangible results. Our collaborative approach ensures that every project we undertake 
-              aligns perfectly with our clients' goals and exceeds their expectations.
-            </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Though officially founded in <strong>2025</strong>, our journey began way back in <strong>2022</strong> — 
+                when a few passionate freelancers started building digital solutions that made a real impact. 
+                What started as individual creative work has now evolved into <strong>Innov8 Technologys</strong>, 
+                a full-fledged digital agency driven by innovation, design, and results.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Our team blends years of hands-on experience with fresh ideas and cutting-edge tech. 
+                From websites and web apps to branding and strategy, we craft digital experiences 
+                that not only look exceptional but also deliver measurable growth.
+              </p>
+
             
             <div className="grid grid-cols-2 gap-8 mt-8 mb-8">
               <div>
@@ -52,7 +55,7 @@ const About = () => {
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-golden-700">4</div>
+                <div className="text-3xl font-bold text-golden-700">8</div>
                 <div className="text-gray-600">Team Members</div>
               </div>
             </div>
